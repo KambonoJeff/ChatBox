@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LiveChatBot</title>
+    <link rel='stylesheet' href='stylee.css'>
+</head>
+<body id = "body">
+    <div class = "container1">
+    <div class = "container" >
+     <div class = "toggle" id="toggle"><span>LiveChat</span>BOT
+      </div>  
+     <div class = "list">
+       <ul class = "items">
+         <li id = "box"><a href> home</a></li>
+         <li id = "box1"><a href> log<span>IN</span></a></li>
+         <li id = "box2"><a href> About </a></li>
+       </ul>
+     </div>
+    </div>
+    </div>
+    <!--chatroom-->
+    <div class = "container2" >
+        <div class = "containerb" id="containerb">
+          <h3 class="h3" id="banner">Chat-PlatForM</h3>
+          <div class = "sender" id="bbanner">
+            <div id = "sender">Sender's Name</div>
+             <p>This will be the sender's side of the story.
+This will be the sender's side of the story.
+This will be the sender's side of the story.
+            </p>
+            <div class = "time">00:00</div>
+          </div>
+          <div class = "receiver" id="reciever">
+            <div id = "reciever">Reciever's Name</div>
+            <div> <p>This will be the reciever's side of the story.
+This will be the reciever's side of the story.
+This will be the reciever's side of the story.
+            </p></div>
+            <div class = "time">00:00</div>
+          </div>
+        <form class = "msgbox" id="msgbox">
+          
+          <input class = "messagebox" id="messagebox" text = "text" placeholder = "place your text message here message">
+          <input type="submit"  class="login" id="login" value="Send">
+          
+        </form>
+    </div>
+    <!-- <script>
+      function location(){
+  
+  if (navigator.geolocation){
+    navigator.geolocation.getCurrentPosition(showPosition);}
+   else {
+      var newd = document.createElement('h5')
+      var newdtext = document.createTextNode('Geolocation is not supported');
+      newd.appendChild(newdtext)
+      var chat = document.querySelector('containerb h3');
+      var sender = document.querySelector('.sender');
+      chat.insertBefore(newd, sender);
+
+      }
+    }
+    function showPosition(position){
+      var newdiv = document.createElement('h3');
+      newdiv.className = 'h3'
+      var positionshow = document.createTextNode('latitude'+position.coords.latitude+'longitude'+position.coords.longitude+'.');
+      newdiv.appendChild(positionshow);
+
+      var containerb = document.getElementsByClassName('.containerb');
+      var h3 = document.querySelector('.containerb h3');
+      containerb.insertBefore('newdiv', h3);
+    }
+     </script> -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.11.0/qs.min.js" integrity="sha512-/l6vieC+YxaZywUhmqs++8uF9DeMvJE61ua5g+UK0TuHZ4TkTgB1Gm1n0NiA86uEOM9JJ6JUwyR0hboKO0fCng==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/socket.io/socket.io.js"></script>
+     <script src="main.js"></script>
+</body>
+</html>

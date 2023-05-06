@@ -1,0 +1,209 @@
+* {
+   box-sizing: border-box;
+  padding:0;
+  margin:0;
+}
+body{
+  background: linear-gradient(#000000, #003542);
+  background-repeat: no-repeat ;
+   background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  line-height: 1.5;
+  color: white;
+  font-size: 20px;
+  font-family: 'poppins', 'sans-serif';
+  margin:0;
+  align-items: center;
+} 
+.container1 {
+  border:none;
+  position:sticky;
+  top:0;
+  right:0;
+  background-color: black;
+  max-width: 100%;
+  align-items: center;
+}
+.container {
+  display:flex;
+  flex-wrap: wrap;
+  align-self: center;
+  justify-content: space-between;
+  margin: 0 auto ;
+  max-width: 80%; 
+  padding: 2px;
+  border-left:1px solid yellow;
+  border-right:1px solid yellow;
+
+}
+.toggle{
+  width :fit-content;
+  margin-left: 8px;
+}
+.list{
+  width: fit-content;
+  margin-right: 5.5px;
+}
+.list .items{
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  color: white;
+  list-style-type: none;
+   text-decoration: none;
+}
+.list .items a {
+  text-decoration: none;
+  list-style-type:none;
+  color: white;}
+ .items li {
+   margin-right:4px;
+ }
+span{
+  color:yellow;
+}
+.containerb {
+  /*background-image:url(BmW2025~3.jpg); 
+  background-repeat: no-repeat ;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;*/
+  border-left:1px solid yellow;
+  border-right:1px solid yellow;
+  border-bottom-left-radius: 3em;
+  border-bottom-right-radius: 3em;
+  display:grid;
+  align-self: center;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto ;
+  max-width: 80%;
+  max-height: fit-content ;
+  padding: 4px;
+}
+.msgbox{
+   display:flex;
+  flex-wrap: wrap; 
+  align-self: center;
+  padding: 3px;
+  border-top: 2px solid yellow;
+  border-radius: 3em;
+  margin-top:3em;
+  margin-left:10%;
+  width:80%;
+  align-items: center;
+}
+.sender {
+  
+  background-color: black;
+  border :2px solid yellow;
+  padding:2px;
+  margin-top:2px;
+  margin-left: 5%;
+  border-radius: 6px;
+  width:45%;
+  height:fit-content;
+}
+.flush {
+  background-color: black;
+  border :2px solid yellow;
+  padding:5px;
+  margin-top:2px;
+  margin-left: 5%;
+  margin-bottom: 5px;
+  border-radius: 2px;
+  letter-spacing: 3px;
+  text-align: center;
+  color: yellow;
+  font-size: 17px;
+  width:90%;
+  height:fit-content;
+  animation: flush 3s;
+  animation-timing-function: ease-in-out;
+  animation-play-state: calc(1);
+  
+}
+@keyframes flush {
+  from: 100% {display:none;}
+  to: 0%{display:block}
+  
+}
+#sender{
+  margin-bottom: 3px;
+  font-weight: bold;
+}
+#reciever{
+  margin-bottom: 3px;
+  font-weight: bold;
+}
+.receiver {
+  background-color: yellow;
+  border :2px solid yellow;
+  border-radius: 6px;
+  margin-top:2px;
+  margin-left: 50%;
+  padding:2px;
+  color:black;
+  width:45%;
+  height:fit-content;
+}
+.label{
+  color: yellow;
+}
+.messagebox {
+  align-self: center;
+  background-color: black;
+  border :2px solid black;
+  border-radius: 6px;
+  margin-right: 1.5rem;
+  margin-top:2px;
+  padding:3.5px;
+  color:white;
+  letter-spacing: 2px;
+  width:60%;
+  height:fit-content;
+ 
+}
+.containerb label {
+  color:black;
+  font-weight:bold;
+}
+.containerb h3{
+  margin:2px auto;
+  color: transparent;
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: 2px;
+  -webkit-text-stroke-color: yellow;
+  -webkit-text-stroke-width: 1px;
+  }
+.time{
+  color:#73ff56ff;
+  margin-left:70%;
+  font-weight: bold;
+}
+.login{
+  border-color: transparent;
+  border-bottom-color: yellow;
+  border-right-color: yellow;
+  border-left-color: yellow;
+  border-radius: 7px;
+  background-color: rgb(16, 19, 18);
+  color:yellow;
+  height: 2em;    
+  width: 7em;
+  
+}
+.h3{
+animation-name: muhonja;
+    animation-play-state: running;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+  }
+    @keyframes muhonja {
+      from{margin-left: 30%;}
+      to{margin-left: 20%;}
+      
+    }
